@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced 8.31</title>
+    <style>
+        body{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .wrapper {
+            padding: 5%;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .container h1,h4 {
+            color:#878787;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container .banner{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .container .col-4{
+            width: 40%;
+        }
+        .container .col-4 h3{
+            margin-top: 0;
+        }
+        p {
+            color: #878787;
+            /* text-align: justify; */
+        }
+        .content {
+            margin: 0 5%;
+            text-align: justify;
+        }
+        /* Responsive media */
+        @media screen and (max-width: 480px){
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            .container .col-4, .container .col-6 {
+                width: 100%;
+            }
+            .container .col-6 img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>2017: <br>
+                Color <br>
+                Analysis
+            </h1>
+            <h4>May 25, 2017</h4>
+        </div>
+        <div class="container">
+            <img src="images/img8-31.PNG" class="banner">
+        </div>
+        <div class="container" >
+            <div class="col-4">
+                <h3>Pony color</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed dictum, dui ut egestas pharetra
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="images/img8-32.PNG" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum, dui ut egestas pharetra, sem velit convallis ligula, vitae maximus dui ante ac enim. Nulla nunc sem, vestibulum et augue non, ornare elementum turpis. Sed nec massa ac nunc tincidunt 
+                venenatis ac in dui. Integer ac porttitor sem. 
+            </p>
+            <p>
+                Cras semper enim magna, a sollicitudin purus convallis a.
+                 Vestibulum ante ipsum primis in faucibus orci luctus 
+                et ultrices posuere cubilia
+            </p>
+        </div>
+    </div>
+</body>
+</html>
