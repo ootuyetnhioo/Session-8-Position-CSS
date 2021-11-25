@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8.2</title>
+    <style>
+        body {
+            background-color: #fff6db;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+        }
+        header img {
+            width: 200px;
+            margin-right: 50px;
+        }
+        header .title h1{
+            color: #ef8762;
+            font-size: 60px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header .title h3 {
+            color: #686868;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        section .iconw {
+            text-align: center;
+        }
+        section .iconw img{
+            width: 30px;
+        }
+        section .wrap-content {
+            text-align: justify;
+        }
+        section .info {
+            display: flex;
+        }
+        section .info .link {
+            width: 33.3%;
+        }
+        section .info .link img{
+            width: 20px;
+        }
+        section .description {
+            display: flex;
+            margin-top: 20px;
+        }
+        section .description .skill {
+            width: 50%;
+            border-right: dashed 5px orangered;
+        }
+
+        footer {
+            display: flex;
+        }
+        footer .contact {
+            width: 25%;
+        }
+        footer .contact img{
+            width: 20px;
+        }
+        /* Responsive */
+        @media screen and (min-width: 768px) and (max-width: 900px){
+            footer {
+                flex-wrap: wrap;
+            }
+            footer .contact {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 566px){
+            header img {
+                width: 100px;
+            }
+            header .title h1 {
+                font-size: 30px;
+            }
+            header .title h3 {
+                font-size: 15px;
+            }
+            section .info {
+                flex-wrap: wrap;
+            }
+            section .info .link {
+                width: 50%;
+            }
+            footer {
+                flex-wrap: wrap;
+            }
+            footer .contact {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/codegirl.jpg" alt="">
+            <div class="title">
+                <h1>Kelly Barrett</h1>
+                <h3>Home Decor/ Weddings/ Accessories</h3>
+            </div>
+        </header>
+        <section>
+            <div class="iconw">
+                <img src="images/iconw.png" alt="">
+            </div>
+            <p class="wrap-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec diam maximus, fermentum risus eu, 
+                facilisis diam. Vestibulum in vulputate ex. Quisque lacus nisi, venenatis sit amet nisl vel, 
+                suscipit maximus elit. Cras tempor arcu nec sem tincidunt lobortis. 
+            </p>
+            <div class="info">
+                <div class="link">
+                    <img src="images/Global-icon.png" alt="">
+                    www.kellybarrett.com
+                </div>
+                <div class="link">
+                    <img src="images/mail-icon.png" alt="">
+                    www.kellybarrett.com
+                </div>
+                <div class="link">
+                    <img src="images/Phone-icon.png" alt="">
+                    www.kellybarrett.com
+                </div>
+            </div>
+            <div class="description">
+                <div class="skill">
+                    <h2>Skills</h2>
+                </div>
+                <div class="experience">
+                    <h2>Experience</h2>
+                </div>
+            </div>
+            <div class="iconw">
+                <img src="images/iconw.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <div class="contact">
+                <img src="images/logo-facebook.png" alt="">
+                www.kellybarrett.com
+            </div>
+            <div class="contact">
+                <img src="images/logo-facebook.png" alt="">
+                www.kellybarrett.com
+            </div>
+            <div class="contact">
+                <img src="images/logo-facebook.png" alt="">
+                www.kellybarrett.com
+            </div>
+            <div class="contact">
+                <img src="images/logo-facebook.png" alt="">
+                www.kellybarrett.com
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
